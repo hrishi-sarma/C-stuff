@@ -1,0 +1,25 @@
+#include <iostream>
+
+
+int main() {
+    for (int i = 100; i <= 400; i++) {
+        std::string x = std::to_string(i);
+        bool Even = true;
+        for (int j = 0; j < x.length(); j++) {
+            int digit = x[j] - '0'; 
+            if (digit % 2 != 0) {
+                Even = false;
+                break;
+            }
+        }
+        if (Even) {
+            std::cout << i;
+
+            if (i < 400) {
+                std::cout << ", ";
+            }
+        }
+    }
+    std::cout << std::endl;
+    return 0;
+}

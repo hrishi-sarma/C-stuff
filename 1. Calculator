@@ -1,0 +1,30 @@
+#include <iostream>
+
+int main() {
+  int n, x,y;
+  std::cout<<"Enter your operation : "<<std::endl;
+  std::cout<<"1 - Add"<<std::endl<< "2 - Subtract"<<std::endl<< "3 - Multiply"<<std::endl<<"4 - Divide"<<std::endl<<"5 - Modulus"<<std::endl;
+  std::cin>> n;
+  if(n >= 1 && n<= 4){
+    std::cout<<"Enter two numbers : ";
+    std::cin>>x>>y;
+    if(n == 1){
+      std::cout<<"Sum : "<<x+y;
+    }
+    else if(n == 2){
+      std::cout<<"Difference : "<<x-y;
+    }
+    else if(n == 3){
+      std::cout<<"Product : "<<x*y;
+    }
+    else if(n == 4){
+      std::cout<<"Division : "<<x/y;
+    }
+    else if(n == 5){
+      std::cout<<"Modulus : "<<x%y;
+    }
+  }
+  else{
+    std::cout<<"Invalid operation";
+  }
+}

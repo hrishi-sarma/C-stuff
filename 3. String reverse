@@ -1,0 +1,10 @@
+#include <iostream>
+
+int main() {
+  std::string d;
+  std::cout << "Enter a string: ";
+  std::cin >> d;
+  for(int i = d.length() - 1; i >= 0; i--){
+    std::cout << d[i];
+  }
+}

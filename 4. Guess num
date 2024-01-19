@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main() {
+  int x, y;
+  x = 5;
+  
+  std::cout << "Guess the number : ";
+  std::cin >> y;
+  while (y != x) {
+    std::cout << "Wrong, try again : ";
+    std::cin >> y;
+  }
+
+  std::cout << "Correct";
+
+  return 0;
+}

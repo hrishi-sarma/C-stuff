@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main() {
+  int x,y,z;
+  std::cout<<"Enter 2 nums for sum: ";
+  std::cin>>x>>y;
+  z = x+y;
+  if(z>105 && z<200){
+    std::cout<<"200";
+  }
+  else{
+    std::cout<< z;
+  }
+}
